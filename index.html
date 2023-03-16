@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc-body">
+        <div class="output">
+            <input type="text" placeholder="0" id="screen" readonly>
+        </div>
+        <div class="buttons">
+            <button type="button" id="percent"onclick="show('%')" class="btn del-operator">
+                %
+            </button>
+            <button type="button" id="ac" onclick="allClear()" class="btn del-operator">
+                AC
+            </button>
+            <button type="button" id="delete"onclick="del()" class="btn del-operator">
+               DEL
+            </button>
+            <button type="button" id="divide" class="btn operator"onclick="show('/')">
+                /
+            </button>
+            <button type="button" id="seven" class="btn" class= "btn" onclick="show('7')">
+                7
+            </button>
+            <button type="button" id="eight" class="btn" class= "btn" onclick="show('8')">
+                8
+            </button>
+            <button type="button" id="nine" class="btn" onclick="show('9')">
+                9
+            </button>
+            <button type="button" id="multiply" class="btn operator"onclick="show('*')">
+               *
+            </button>
+            <button type="button" id="four" class="btn"onclick="show('4')">
+                4
+            </button>
+            <button type="button" id="five" class="btn" onclick="show('5')">
+                5
+            </button>
+            <button type="button" id="six" class="btn"onclick="show('6')">
+                6
+            </button>
+            <button type="button" id="sub" class="btn operator"onclick="show('-')">
+               -
+            </button>
+            <button type="button" id="one" class="btn"onclick="show('1')">
+                1
+            </button>
+            <button type="button" id="second" class="btn"onclick="show('2')">
+                2
+            </button>
+            <button type="button" id="three" class="btn"onclick="show('3')">
+                3
+            </button>
+            <button type="button" id="add" class="btn operator"onclick="show('+')">
+               +
+            </button>
+            <button type="button"id="double-zero" class="btn"onclick="show('00')">
+                00
+            </button>
+            <button type="button" id="zero" class="btn"onclick="show('0')">
+                0
+            </button>
+            <button type="button" id="point" class="btn"onclick="show('.')">
+                .
+            </button>
+            <button type="submit" id="equal" class="btn operator"onclick="calc()">
+               =
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
